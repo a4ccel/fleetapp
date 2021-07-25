@@ -420,9 +420,9 @@
                   <td th:text="${country.capital}"></td>
                   <td th:text="${country.code}"></td>
                   <td>
-                  <div class="btn-group">
-                      <a class="btn btn-primary" id="editButton">Edit</a>
-                  </div>
+                      <div class="btn-group">
+                          <a th:href="@{/countires/findById/(id=${country.id})}" class="btn btn-primary" id="editButton" data-toggle="modal" data-target="#editModal">Edit</a>
+                      </div>
                   </td>
               </tr>
               </tbody>
